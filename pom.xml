@@ -15,8 +15,23 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+     <repository>
+       <id>nexus</id>
+       <name>Ategha Release Nexus Repository</name>
+       <url>http://54.206.42.67:8081/repository/MWA-release/</url>
+     </repository>
+    <snapshotRepository>
+       <id>nexus</id>
+       <name>Ategha Snapshot Nexus Repository</name>
+       <url>http://54.206.42.67:8081/repository/MWA/</url>
+    </snapshotRepository>
+  </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.host.url>http:172.31.5.173:9000/</sonar.host.url>
+    <sonar.login>admin</sonar.login>
+    <sonar.password>admin</sonar.password>
   </properties>
   <build>
     <pluginManagement>
